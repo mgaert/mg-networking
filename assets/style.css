@@ -1,0 +1,48 @@
+/* Sticky Navigation */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 999;
+  padding: 8px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-family: Inter, sans-serif;
+}
+
+.sticky-nav a {
+  color: #0A1A2F;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sticky-nav a:hover {
+  color: #2E9CCF;
+}
+
+/* Header Styling */
+h1, h3 {
+  font-family: Inter, sans-serif;
+  margin-bottom: 0;
+}
+
+img {
+  margin-top: 20px;
+}
+
+/* Body Text */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #0A1A2F;
+  line-height: 1.6;
+}
+
+/* Sections */
+section {
+  margin-top: 40px;
+}
