@@ -1,0 +1,24 @@
+title: "MG – Networking"
+description: "Softwareentwicklung • Technical Scrum Master (PSM II) • Agile Delivery"
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag
+
+seo:
+  type: "website"
+  name: "MG – Networking"
+  description: "Freelance Softwareentwicklung & Technical Scrum Master (PSM II)"
+  author: "Michael"
+
+include: 
+  - assets
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+
+markdown: kramdown
+highlighter: rouge
