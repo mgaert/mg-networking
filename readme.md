@@ -3,19 +3,20 @@
 **Softwareentwicklung • Technical Scrum Master (PSM II) • Agile Delivery**
 
 Willkommen im Repository der offiziellen Website von **MG – Networking**.  
-Dieses Projekt dient als persönliche Landing Page für meine freiberuflichen Leistungen in den Bereichen Softwareentwicklung, Agile Coaching und technische Prozessoptimierung.
+Dieses Projekt dient als persönliche Landing Page für meine freiberuflichen Leistungen in den Bereichen Softwareentwicklung, Agile Coaching und technischer Prozessoptimierung.
 
-Die Seite wird über **GitHub Pages** bereitgestellt und ist vollständig in Markdown aufgebaut, ergänzt durch ein leichtgewichtiges CSS‑Styling.
+Die Seite wird über **GitHub Pages** bereitgestellt und basiert vollständig auf **HTML + SCSS**, ohne Jekyll‑Theme oder Markdown‑Rendering.
 
 ---
 
 ## 🚀 Features
 
-- Modernes, minimalistisches Layout  
-- Sticky Navigation für bessere Usability  
-- Individuelles Branding (Logo, Farben, Typografie)  
-- Klare Struktur für Leistungen, Pakete und Kontakt  
-- Vollständig kompatibel mit GitHub Pages
+- Modernes, responsives HTML‑Layout  
+- Hero‑Section, Leistungen, Pakete, About & Zertifizierungen  
+- Sticky Navigation  
+- Individuelles Branding (Farben, Typografie, Logo)  
+- SCSS‑Struktur mit automatischer Kompilierung durch GitHub Pages  
+- Saubere, modulare Code‑Struktur  
 
 ---
 
@@ -23,22 +24,45 @@ Die Seite wird über **GitHub Pages** bereitgestellt und ist vollständig in Mar
 
 ```
 /
-├── index.md          # Hauptseite
-├── _config.yml       # GitHub Pages Konfiguration
+├── index.html              # Hauptseite (Landing Page)
+├── _config.yml             # GitHub Pages Konfiguration (HTML + SCSS)
 └── assets/
-    ├── logo.png      # Logo von MG – Networking
-    └── style.css     # Custom CSS
+    ├── img/                # Bilder, Icons, Logos
+    ├── scss/               # SCSS-Quellcode
+    │   └── style.scss
+    └── css/
+        └── style.css       # Automatisch generiert aus SCSS
 ```
 
 ---
 
 ## 🧩 Technologien
 
-- GitHub Pages  
-- Markdown  
-- Jekyll (Theme: Cayman)  
-- Custom CSS  
-- SVG/PNG Logo
+- **GitHub Pages** (Deployment)  
+- **HTML5** (Struktur)  
+- **SCSS** (Styles, kompiliert nach CSS)  
+- **Jekyll SCSS Pipeline** (nur für SCSS, kein Theme)  
+- **PNG/JPG/SVG Assets**
+
+---
+
+## ⚙️ SCSS Build Setup
+
+GitHub Pages kompiliert SCSS automatisch.  
+Die `_config.yml` ist entsprechend konfiguriert:
+
+```yaml
+theme: null
+markdown: null
+
+sass:
+  sass_dir: assets/scss
+  style: compressed
+
+exclude:
+  - README.md
+```
+SCSS‑Dateien aus assets/scss werden automatisch nach assets/css kompiliert.
 
 ---
 
@@ -47,8 +71,8 @@ Die Seite wird über **GitHub Pages** bereitgestellt und ist vollständig in Mar
 **MG – Networking**  
 Wendlingen am Neckar, Deutschland  
 
-📧 E-Mail: michael.gaertner@mg-networking.com
-🔗 LinkedIn: https://linkedin.com/in/mgaert  
+📧 E-Mail: michael.gaertner\[at\]mg-networking.com
+🔗 LinkedIn: [https://linkedin.com/in/mgaert]
 
 ---
 
