@@ -1,0 +1,234 @@
+body {
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+  color: #0A1A2F;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+.nav .nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+.nav .nav-inner .logo-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav .nav-inner .logo-inline img {
+  height: 128px;
+}
+.nav .nav-inner .logo-inline span {
+  font-weight: 600;
+}
+.nav .nav-inner nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0A1A2F;
+  font-weight: 500;
+}
+.nav .nav-inner nav a:hover {
+  color: #2E9CCF;
+}
+
+/* GLOBAL GRID (Hero + Packages) */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+.hero .hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+.hero .subtitle {
+  font-size: 22px;
+  color: #2E9CCF;
+}
+.hero .lead {
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #2E9CCF;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Packages Hero */
+.packages-hero {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+.packages-hero .packages-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+.packages-hero .packages-text h2 {
+  margin-bottom: 32px;
+}
+.packages-hero .packages-text .package-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.packages-hero .packages-text .package-item h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.packages-hero .packages-text .package-item p {
+  font-size: 18px;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+.section.alt {
+  background: #f8fafc;
+}
+.section .section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.section .section-title.left {
+  text-align: left;
+}
+
+/* Cards */
+.cards,
+.pricing {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards .card,
+.cards .price-card,
+.pricing .card,
+.pricing .price-card {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.cards .card.alt,
+.cards .price-card.alt,
+.pricing .card.alt,
+.pricing .price-card.alt {
+  background: white;
+}
+.cards .card-icon,
+.pricing .card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 40px;
+  align-items: center;
+}
+.about-grid .about-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Zertifizierungen */
+.certs {
+  text-align: center;
+}
+.certs .cert-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.certs .cert-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certs .cert-item img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.12));
+}
+.certs .cert-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #0A1A2F;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .packages-hero .hero-grid {
+    text-align: center;
+  }
+  .packages-text .package-item p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    text-align: center;
+  }
+  .about-image {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
